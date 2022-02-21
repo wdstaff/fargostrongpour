@@ -104,14 +104,17 @@
 		    <label for="fname">First Name</label>
 		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-		    <label for="lname">Last Name</label>
+		<!--    <label for="lname">Last Name</label>
 		    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
+			-->
 				<label for="email">Email Address</label>
 				<input type="email" id="email" name="email" placeholder="Your Email Address..">
 
 				<label for="tel">Phone Number</label>
 				<input type="tel" id="tel" name="tel" placeholder="Your Cell Phone Number..">
+
+				<label for="task">Task Input</label>
+				<input type="text" id="lname" name="task" placeholder="Task Test..">
 
 
 		    <label for="subject">Subject</label>
