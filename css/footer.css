@@ -1,0 +1,91 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+  width:100%;
+  min-width:600px;
+
+
+}
+
+img {
+  max-height:100%;
+  max-width:100%;
+}
+
+/* footer */
+
+footer {
+  background-color: rgba(128,128,128,.13);
+  padding-top:15px;
+  padding-bottom:15px;
+  height:150px;
+  margin-top:50px;
+}
+
+.headings {
+  display:flex;
+}
+
+.headings h4:first-of-type {
+  text-align:left;
+}
+
+.headings h4 {
+  width:30%;
+  text-align:center;
+  margin:auto;
+}
+
+.flex_container {
+  display:flex;
+}
+
+.left_footer, .middle_footer, .right_footer {
+  width:30%;
+  margin:auto;
+
+
+}
+
+.left_footer p {
+  margin-bottom:0;
+}
+
+.middle_footer {
+  text-align: center;
+}
+
+.right_footer {
+  text-align: center
+}
+
+/* facebook f icon */
+
+.fa:before {
+  font-size:50px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: transparent;
+  color: rgba(128,128,128);
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+  /* footer */
+
+  footer {
+    height:100%;
+  }
+
+  }

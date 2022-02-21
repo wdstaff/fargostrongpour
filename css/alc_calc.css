@@ -1,0 +1,93 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  max-height:100%;
+  max-width:100%;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+}
+
+.title_text {
+  font-size:50px;
+  text-align:center;
+}
+
+.alc_calc {
+  text-align:center;
+}
+.logo {
+  max-width:50%;
+}
+
+.alc_calc_form {
+  display:inline-block;
+  border:double 8px;
+  padding:8px;
+  background-color: lightgray;
+  width:75%;
+}
+
+.submit_button {
+  border: solid 1px;
+  background-color:green;
+  display:inline-block;
+  padding:8px;
+  cursor:pointer;
+  width:50%;
+  height:50px;
+  line-height:50px;
+}
+
+legend {
+  font-size:40px;
+  text-align:center;
+}
+
+.alc_calc input {
+  border:solid 1px;
+  margin-top:5px;
+  margin-bottom: 16px;
+  width:75%;
+  height:50px;
+  font-size:20px;
+}
+
+label {
+  font-size:30px;
+}
+
+h2 {
+  font-size:40px;
+}
+
+.sub_button {
+  font-size:30px;
+}
+
+h3 {
+ font-size:30px;
+}
+
+#fiber {
+  margin-bottom: auto;
+}
+
+
+.alc_cals {
+  display:block;
+  margin:auto;
+}
+
+@media only screen and (max-width:1300px) {
+
+
+
+
+}

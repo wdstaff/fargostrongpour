@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.fargostrongpour.com/sitemap.xml">
+  <url>
+    <loc>https://www.fargostrongpour.com</loc>
+    <lastmod>2020-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://www.fargostrongpour.com/menu.php</loc>
+      <lastmod>2020-08-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.2</priority>
+    </url>
+    <url>
+      <loc>https://www.fargostrongpour.com/grocery.php</loc>
+      <lastmod>2020-08-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.3</priority>
+    </url>
+    <url>
+      <loc>https://www.fargostrongpour.com/alc_calc.php</loc>
+      <lastmod>2020-09-21</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.4</priority>
+    </url>
+</urlset>
