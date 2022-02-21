@@ -99,7 +99,7 @@
 	<section id ="section_6" class="section app">
 
 		<div class="form_container">
-		  <form action="action.php" method="post">
+		  <form action="https://prod-68.eastus.logic.azure.com:443/workflows/fa84797c4e874a17ba997ecec6267086/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3IjEhwUJF9Du-bLgGDbohNZa10Isz8a57_B54AGlJd8" method="post">
 						<h2>CONTACT US</h2>
 		    <label for="fname">First Name</label>
 		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
