@@ -15,12 +15,11 @@ $headers = array(
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-$randonumber = 12;
 
 $data = <<<DATA
 {
   "Id": 78912,
-  "Customer": "data = {$randonumber}",
+  "Customer": "{$msg}",
   "Quantity": 1,
   "Price": 18.00
 }
