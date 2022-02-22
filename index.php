@@ -99,22 +99,19 @@
 	<section id ="section_6" class="section app">
 
 		<div class="form_container">
-		  <form action="https://prod-68.eastus.logic.azure.com:443/workflows/fa84797c4e874a17ba997ecec6267086/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3IjEhwUJF9Du-bLgGDbohNZa10Isz8a57_B54AGlJd8" method="post">
+		  <form action="action.php" method="post">
 						<h2>CONTACT US</h2>
 		    <label for="fname">First Name</label>
 		    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-		<!--    <label for="lname">Last Name</label>
+		    <label for="lname">Last Name</label>
 		    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-			-->
+
 				<label for="email">Email Address</label>
 				<input type="email" id="email" name="email" placeholder="Your Email Address..">
 
 				<label for="tel">Phone Number</label>
 				<input type="tel" id="tel" name="tel" placeholder="Your Cell Phone Number..">
-
-				<label for="task">Task Input</label>
-				<input type="text" id="lname" name="task" placeholder="Task Test..">
 
 
 		    <label for="subject">Subject</label>

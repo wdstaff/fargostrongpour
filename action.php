@@ -1,27 +1,32 @@
-
 <?php header('Location: https://fargostrongpour.com');
 
-if(isset($_POST['submit'])){
-    $to = "staff@fargostrongpour.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['firstname'];
-    $last_name = $_POST['lastname'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['subject'] . $_POST['tel'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['subject'];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    // You cannot use header and echo together. It's one or the other.
-    }
+$url = "https://prod-68.eastus.logic.azure.com:443/workflows/fa84797c4e874a17ba997ecec6267086/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3IjEhwUJF9Du-bLgGDbohNZa10Isz8a57_B54AGlJd8";
 
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+$headers = array(
+   "Accept: application/json",
+   "Content-Type: application/json",
+);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+
+$data = <<<DATA
+{
+  "Id": 78912,
+  "Customer": "CBALL",
+  "Quantity": 1,
+  "Price": 18.00
+}
+DATA;
+
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+
+$resp = curl_exec($curl);
+curl_close($curl);
+
+echo $resp;
 ?>
-
-
-</body>
-</html>
