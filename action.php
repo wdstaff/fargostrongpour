@@ -1,5 +1,6 @@
 <?php header('Location: https://fargostrongpour.com');
 
+$msg = $_POST['firstname'].' '.$_POST['lastname'].' '.$_POST['email'].' '.$_POST['tel'].' '.$_POST['subject'];
 
 $url = "https://prod-68.eastus.logic.azure.com:443/workflows/fa84797c4e874a17ba997ecec6267086/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=3IjEhwUJF9Du-bLgGDbohNZa10Isz8a57_B54AGlJd8";
 
@@ -14,10 +15,12 @@ $headers = array(
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
+$randonumber = 12;
+
 $data = <<<DATA
 {
   "Id": 78912,
-  "Customer": "CBALL",
+  "Customer": "data = {$randonumber}",
   "Quantity": 1,
   "Price": 18.00
 }
